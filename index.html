@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* Piet Mondrian: Composition No III, with Red, Blue, Yellow, & Black */
+      .container {
+        background-color: black;
+        width: 748px;
+        height: 748px;
+        display: grid;
+        gap: 9px;
+        margin: 2.5rem auto;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+      }
+
+      #large-upper-left-red {
+        background-color: #e72f24;
+      }
+
+      #large-upper-right-white {
+        background-color: #f0f1ec;
+        grid-column: span 3;
+      }
+
+      #large-bottom-left-white {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+
+      #large-bottom-right-white {
+        background-color: #f0f1ec;
+        grid-area: 2 / 2 / 4 / 4;
+      }
+
+      #small-right-blue {
+        background-color: #004592;
+        border-bottom: 10px solid;
+      }
+
+      #small-right-white {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+
+      #small-bottom-left-white {
+        background-color: #f0f1ec;
+      }
+
+      #small-bottom-right-yellow {
+        background-color: #f9d01e;
+      }
+
+      #small-bottom-right-black {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="large-upper-left-red"></div>
+      <div id="large-upper-right-white"></div>
+      <div id="large-bottom-left-white"></div>
+      <div id="large-bottom-right-white"></div>
+      <div id="small-right-blue"></div>
+      <div id="small-right-white"></div>
+      <div id="small-bottom-left-white"></div>
+      <div id="small-bottom-right-yellow"></div>
+      <div id="small-bottom-right-black"></div>
+    </div>
+  </body>
+</html>
